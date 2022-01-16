@@ -1,0 +1,9 @@
+{
+	"name": "AzDataFactory-ingestion",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fed09892-8b28-4ae6-bc9c-5d1b5290d311",
+		"tenantId": "cbede638-a3d9-459f-8f4e-24ced73b4e5e"
+	}
+}
