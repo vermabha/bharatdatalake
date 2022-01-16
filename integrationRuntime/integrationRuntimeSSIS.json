@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimeSSIS",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
