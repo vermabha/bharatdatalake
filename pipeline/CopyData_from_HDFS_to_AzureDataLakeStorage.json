@@ -1,0 +1,46 @@
+{
+	"name": "CopyData_from_HDFS_to_AzureDataLakeStorage",
+	"properties": {
+		"description": "Copy data from HDFS (Hadoop Distributed File System) to Azure Data Lake Storage.\n\n\nYou can also go to \"Copy Data Tool\" to get the pipeline for more connectors and scenarios.",
+		"activities": [
+			{
+				"name": "HDFS_to_AzureDataLakeStorage",
+				"description": "Copy data from HDFS (Hadoop Distributed File System) to Azure Data Lake Storage.",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "HdfsSource",
+						"recursive": true
+					},
+					"sink": {
+						"type": "AzureBlobFSSink"
+					},
+					"enableStaging": false,
+					"dataIntegrationUnits": 0
+				},
+				"inputs": [
+					{
+						"referenceName": "DataSourceStore",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DataDestinationStore",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

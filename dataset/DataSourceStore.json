@@ -1,0 +1,12 @@
+{
+	"name": "DataSourceStore",
+	"properties": {
+		"description": "Connection to your HDFS.",
+		"linkedServiceName": {
+			"referenceName": "Hdfs1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "FileShare"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "DataDestinationStore",
+	"properties": {
+		"description": "Connection to your Azure Data Lake Store.",
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlobFSFile"
+	}
+}
