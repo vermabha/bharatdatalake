@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "AzDataFactory-ingestion"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"Hdfs1_password": {
+			"value": ""
+		},
+		"OnPremWPG02KQP5_connectionString": {
+			"value": ""
+		},
+		"OnPremWPG02KQP5_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://bharatdatalakestore.dfs.core.windows.net"
+		},
+		"Hdfs1_properties_typeProperties_url": {
+			"value": "http://20.67.107.211/"
+		},
+		"Hdfs1_properties_typeProperties_userName": {
+			"value": "vermabha"
+		},
+		"OnPremWPG02KQP5_properties_typeProperties_userName": {
+			"value": "AP\\vermabha"
+		}
+	}
+}
